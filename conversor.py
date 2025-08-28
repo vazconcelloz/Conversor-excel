@@ -108,7 +108,7 @@ for tipo in ["obrigatorias", "condicionais", "facultativas"]:
         colunas_config.append({"nome": col, "tipo": tipo})
 
 # Mostrar tabela de colunas com cores
-cores = {"obrigatorias": "🔴", "condicionais": "🔵", "facultativas": "🟢"}
+cores = {"obrigatorias🔴", "condicionais🔵", "facultativas🟢"}
 st.subheader("Colunas esperadas")
 st.table(pd.DataFrame([{"Coluna": c["nome"], "Tipo": cores[c["tipo"]]} for c in colunas_config]))
 
@@ -184,3 +184,4 @@ if arquivo:
             file_name=f"{nome_arquivo}.xlsx",
             mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
         )
+
